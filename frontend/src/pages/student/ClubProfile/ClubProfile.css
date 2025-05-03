@@ -1,0 +1,328 @@
+.club-profile {
+background-color: var(--bg);
+
+}
+.club-profile-main{
+  padding: 40px 80px;
+}
+
+.club-header-actions {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.back-btn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+  color: var(--text-primary);
+
+}
+.back-btn:hover {
+  background-color: var(--hover);
+  color: var(--text-secondary);
+}
+
+.club-hero {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.club-hero h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--primary);
+  margin-bottom: 10px;
+}
+
+.club-hero p {
+  font-size: 16px;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.subscribe-btn {
+  background-color: var(--secondary);
+  border: none;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.subscribe-btn:hover {
+  background-color: var(--hover);
+  color: white;
+}
+
+.club-info-section {
+  display: flex;
+  gap: 60px;
+  justify-content: space-between;
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+
+.about {
+  flex: 1;
+}
+
+.about h2 {
+  font-size: 22px;
+  margin: 0 0 20px 0;
+  padding: 0;
+  color: var(--primary);
+}
+
+.about h4 {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+.about p {
+  font-size: 14px;
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.album {
+  flex: 1;
+}
+
+.album h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: var(--primary);
+}
+
+.album-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.album-img-placeholder {
+  height: 100px;
+  background-color: var(--surface);
+  border-radius: 8px;
+}
+
+.events-section {
+  margin-bottom: 80px;
+}
+
+.events-section h2 {
+  font-size: 20px;
+  margin-bottom: 16px;
+  color: var(--primary);
+}
+
+.events-carousel {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding-bottom: 8px;
+}
+
+.apply-section {
+  text-align: center;
+  margin: 80px 0 60px;
+}
+
+.apply-section p {
+  font-size: 16px;
+  margin-bottom: 12px;
+  color: var(--text-primary);
+}
+
+.application-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.application-form {
+  background-color: var(--surface);
+  width: 600px;
+  max-width: 90%;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+  position: relative;
+  max-height: 80vh;
+  overflow-y: auto;
+  color: var(--text-secondary);
+}
+
+.application-form h3 {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: var(--text-secondary);
+}
+
+.application-form input {
+  display: block;
+  width: 100%;
+  margin-bottom: 14px;
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: var(--bg);
+  color: var(--text-primary);
+}
+  
+  .submit-btn {
+    margin-top: 24px;
+    padding: 12px 20px;
+    background-color: var(--secondary);
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+  }
+  .submit-btn:hover{
+    background-color: var(--hover);
+  }
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  font-size: 18px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-primary);
+}
+
+.close-btn:hover{
+  background-color: var(--hover);
+  color: white;
+}
+
+
+.membership-btn {
+  background-color: var(--secondary);
+  color: white;
+  padding: 10px 26px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.membership-btn:hover {
+  background-color: var(--hover);
+}
+
+.social-section {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.social-section h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: var(--primary);
+}
+
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.social-icon img {
+  width: 36px;
+  height: 36px;
+  border-radius: 25%;
+  transition: transform 0.2s ease;
+  
+}
+
+.social-icon:hover img {
+  transform: scale(1.1);
+}
+
+.main-event-card.no-image {
+  width: 300px;
+  background-color: var(--surface);
+  color: var(--text-secondary);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  border: 1px solid var(--border);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+
+.main-event-card.no-image:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.main-event-info {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  color: var(--text-secondary);
+  text-align: left;
+}
+
+.main-event-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-event-header h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.price {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--primary);
+  white-space: nowrap;
+}
+
+.main-event-info p,
+.main-event-info svg {
+  font-size: 14px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  color: var(--text-secondary);
+}
+
+.main-event-card-link {
+  text-decoration: none;
+  color: inherit;
+}

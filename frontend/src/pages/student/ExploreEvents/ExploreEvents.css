@@ -1,0 +1,222 @@
+.explore-events-page {
+    background-color: var(--bg);
+  }
+
+  .main-explore-events {
+    padding: 40px;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  .page-title {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 24px;
+    color: var(--primary);
+  }
+  
+  .search-bar-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  .search-input {
+    padding: 10px;
+    width: 280px;
+    border: 1px solid var(--border);
+    border-radius: 6px 0 0 6px;
+    outline: none;
+    background-color: var(--surface);
+    color: var(--text-secondary);
+  }
+  
+  .search-input::placeholder {
+    color: var(--text-secondary);
+  }
+  
+  .search-btn {
+    padding: 10px 20px;
+    background-color: var(--primary);
+    color: white;
+    border: 1px solid var(--primary);
+    border-left: none;
+    border-radius: 0 6px 6px 0;
+    cursor: pointer;
+  }
+  
+  /* Layout container */
+  .events-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    margin-top: 30px;
+  }
+  
+  /* Sidebar - always on the left */
+  .filters-sidebar {
+    width: 250px;
+    background-color: var(--surface);
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    color: var(--text-secondary);
+    flex-shrink: 0;
+  }
+  
+  .filters-sidebar h3 {
+    margin-bottom: 16px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
+  .filter-group {
+    margin-bottom: 20px;
+  }
+  
+  .filter-group h4 {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: var(--text-secondary);
+  }
+  
+  .filter-group label {
+    display: block;
+    margin-bottom: 6px;
+    font-size: 13px;
+    color: var(--text-secondary);
+  }
+  
+  .filter-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+  }
+  
+  .clear-btn,
+  .apply-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+  }
+  
+  .clear-btn {
+    background-color: var(--secondary);
+    color: white;
+  }
+  
+  .clear-btn:hover {
+    background-color: var(--hover);
+  }
+  
+  .apply-btn {
+    background-color: var(--secondary);
+    color: white;
+  }
+  
+  .apply-btn:hover {
+    background-color: var(--hover);
+  }
+  
+  /* Events grid */
+  .event-results {
+    flex: 1;
+    width: 100%;
+  }
+  
+  .event-grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr;
+  }
+  
+  @media (min-width: 1000px) {
+    .event-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (min-width: 1600) {
+    .event-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (min-width: 1650px) {
+    .event-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  .event-results .event-card {
+    margin-bottom: 20px;
+  }
+  
+  .no-results {
+    color: var(--text-secondary);
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .view-more-btn {
+    margin-top: 16px;
+    padding: 10px 20px;
+    background-color: var(--secondary);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .view-more-btn:hover {
+    background-color: var(--hover);
+  }
+  
+  /* Recommended Section */
+  .recommended-section {
+    margin-top: 60px;
+  }
+  
+  .recommended-section h2 {
+    font-size: 22px;
+    margin-bottom: 16px;
+    color: var(--primary);
+    text-align: center;
+  }
+  
+  .recommended-carousel .carousel .slide {
+    background: none;
+    display: flex;
+  }
+  
+  .recommended-carousel .carousel-slide {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 20px;
+  }
+  
+  /* Stack on small screens */
+  @media (max-width: 680px) {
+    .events-content {
+      flex-direction: column;
+    }
+  
+    .filters-sidebar {
+      width: 400px;
+      margin-bottom: 24px;
+      padding-right: 10px;
+    }
+  
+    .event-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .recommended-carousel .carousel-slide {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  

@@ -1,0 +1,239 @@
+body {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  transition: background-color 0.3s, color 0.3s;
+}
+
+
+.dashboard {
+  background-color: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-content {
+  padding: 40px 60px;
+  flex: 1;
+}
+
+.greeting {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  margin-left: -23px;
+}
+
+
+
+@media (min-width: 768px) {
+  .your-events {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .your-events .event-card {
+    flex: 1 1 calc(50% - 1rem);
+  }
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  margin-left: 8px;
+}
+
+.section-header h3 {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.events-clubs-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.your-events {
+  flex: 1.5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.your-clubs {
+  flex: 1;
+  background-color: var(--surface);
+  padding: 20px;
+  order: 2;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  height: fit-content;
+  min-width: 260px;
+  color: var(--text-secondary);
+}
+
+.your-clubs h3 {
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  background-color: var(--bg);
+  color: var(--text-primary);
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.filter-buttons button.active {
+  background-color: var(--secondary);
+  color: var(--text-secondary);
+}
+
+.user-club-card {
+  background-color: var(--bg);
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s;
+  color: var(--text-primary);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-club-card:hover {
+  transform: translateY(-2px);
+}
+
+.user-club-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+
+.user-club-role {
+  font-size: 14px;
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+
+.similar-carousel .carousel .slide {
+  background: transparent !important;
+  display: flex;
+}
+.similar-carousel .slide {
+  background-color: transparent !important;
+}
+
+.similar-carousel .carousel-slide {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+}
+
+.carousel-slide .event-card {
+  width: 300px;
+  height: 300px;
+  max-height: 400px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+  .similar-carousel .carousel-slide {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.dark-toggle {
+  margin-left: auto;
+  background: none;
+  color: var(--text-secondary);
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 32px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  inset: 0;
+  background-color: #ccc;
+  border-radius: 999px;
+  transition: background-color 0.4s;
+}
+
+.slider::before {
+  position: absolute;
+  content: "";
+  height: 24px;
+  width: 24px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease;
+  z-index: 1;
+}
+
+.icon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  bottom: 4px;
+  left: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  font-size: 14px;
+  pointer-events: none;
+  transition: transform 0.3s ease;
+}
+
+/* Move the circle and icon to the right when checked */
+.toggle-switch input:checked + .slider::before {
+  transform: translateX(28px);
+}
+
+.toggle-switch input:checked + .slider .icon {
+  transform: translateX(28px);
+}
+
+/* Dark background toggle */
+.toggle-switch input:checked + .slider {
+  background-color: #111;
+}

@@ -1,0 +1,68 @@
+.manage-members-container {
+  background-color: var(--surface);
+  padding: 2.5rem;
+  border-radius: 16px;
+  color: var(--text-secondary);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.manage-members-container h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.members-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: var(--bg);
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.members-table th,
+.members-table td {
+  padding: 14px 20px;
+  text-align: left;
+  font-size: 0.95rem;
+  color: var(--text-primary);
+  border-bottom: 1px solid var(--border);
+}
+
+.members-table th {
+  background-color: var(--accent);
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.members-table tr:last-child td {
+  border-bottom: none;
+}
+
+.members-table select {
+  padding: 6px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background-color: white;
+  font-size: 14px;
+}
+
+.remove-btn {
+  background-color: var(--error);
+  color: white;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.remove-btn:hover {
+  background-color: #e85a5a;
+}

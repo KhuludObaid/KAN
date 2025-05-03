@@ -1,0 +1,108 @@
+.signup-wrapper {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--login-overlay);
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.signup-card {
+  background-color: var(--bg);
+  padding: 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.signup-card h2 {
+  margin-bottom: 24px;
+  font-size: 28px;
+  font-weight: bold;
+  color: var(--primary);
+}
+
+.signup-card label {
+  display: block;
+  margin-top: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.signup-card input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background-color: var(--bg);
+  color: var(--text-primary);
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 12px;
+  color: var(--text-secondary);
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.signup-btn:hover {
+  background-color: var(--hover);
+}
+
+.login-redirect {
+  margin-top: 16px;
+  font-size: 14px;
+  text-align: center;
+  color: var(--text-primary);
+}
+.login-redirect a{
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--secondary);
+}
+.signup-link {
+  color: var(--info);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  text-decoration: underline;
+}
+
+.close-btn {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--text-primary);
+  transition: color 0.2s;
+}
+
+.close-btn:hover {
+  color: var(--error);
+}
+
+@media (max-width: 500px) {
+  .signup-wrapper {
+    padding: 1rem;
+  }
+
+  .signup-card {
+    padding: 24px;
+  }
+}

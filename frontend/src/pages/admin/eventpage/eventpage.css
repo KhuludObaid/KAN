@@ -1,0 +1,170 @@
+.page-content {
+  margin: 2rem;
+}
+
+.greeting {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: var(--primary);
+}
+
+.add-event {
+  margin-bottom: 2rem;
+}
+
+.add-button {
+  background-color: var(--secondary);
+  color: white;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: var(--hover);
+}
+
+.eventcard-grid {
+  display: grid;
+  gap: 4rem;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+}
+
+.event-cardAdmin {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  color: var(--text-secondary);
+}
+
+.event-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+  background-color: var(--bg);
+  height: 140px;
+  border-radius: 8px;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  overflow: hidden;
+}
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.card-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.btn-ghost-sm {
+  border: none;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+  color: white;
+  background-color: var(--secondary);
+  padding: 6px 10px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+.btn-ghost-sm:hover {
+  background-color: var(--hover);
+}
+
+.event-form-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.6);
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.event-form {
+  background-color: var(--bg);
+  padding: 30px;
+  border-radius: 10px;
+  width: 400px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+  color: var(--text-primary);
+}
+
+.event-form h2 {
+  margin-bottom: 20px;
+  color: var(--primary);
+}
+
+.event-form label {
+  font-weight: 500;
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 4px;
+}
+
+.event-form input,
+.event-form select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  background-color: var(--bg);
+  color: var(--text-primary);
+}
+
+.event-form .form-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+/* Add this style for the effect */
+.event-cardAdmin {
+  background-color: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  color: var(--text-secondary);
+  cursor: pointer;  /* Ensure cursor is a pointer on hover */
+}
+
+/* Add hover effect */
+.event-cardAdmin:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+
+/* Add active class for click effect */
+.event-cardAdmin:active {
+  transform: translateY(-8px);  /* Move up more when clicked */
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
