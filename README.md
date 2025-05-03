@@ -140,7 +140,7 @@ SWE363Project/
 ## 🌍 Deployment
 
 
-URL: https://kanx.netlify.app
+[🌐 Visit Deployed App](https://kanx.netlify.app)
 ---
 
 ## 🧪 Demo User Accounts
