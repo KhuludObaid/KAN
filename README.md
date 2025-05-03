@@ -99,33 +99,6 @@ Users are redirected based on their roles:
 
 ---
 
-## 👥 Team Members
-
-| Name              | Role Description |
-|-------------------|------------------|
-| **Funoon Albalawi** | Admin dashboard & management logic |
-| **Budoor Alshehri** | Admin UX/UI and system integration |
-| **Khulud Alotaibi** | Student dashboard, homepage, and event registration |
-| **Zahra Alhadab** | Club Admin interface: event & announcement control |
-| **Rahf Altwairqi** | Club Admin interface: member & event management |
----
-
-## 🧾 How to Register
-
-### 👨‍🎓 Student Registration
-- Visit the homepage and click on **Explore Events**.
-- Register for an event with your name and email to create a student account.
-
-### 🧑‍💼 Club Admin Registration
-- A club admin account is created when a user applies to join a club and is approved by the system admin.
-- After approval, the user gains access to the club admin dashboard.
-
-### 👤 Admin Access
-- Admin credentials are preconfigured or manually created in the database.
-- Admin users can log in directly to access system-wide management features.
-
----
-
 ## 📡 API Endpoints
 
 | Method | Endpoint                          | Description                              |
@@ -164,22 +137,10 @@ SWE363Project/
 ```
 
 ---
-
-## 🧪 Running Tests
-
-To run backend tests (if implemented):
-
-```bash
-cd backend
-npm test
-```
-
----
-
 ## 🌍 Deployment
 
-Frontend: [https://your-frontend-link](#)  
-Backend API: [https://your-backend-link](#)
+
+URL: https://kanx.netlify.app
 ---
 
 ## 🧪 Demo User Accounts
@@ -192,3 +153,16 @@ Use the following credentials to log in for testing purposes:
 | Admin   | budoor@outlook.com  | admin123   |
 | club admin   | rahf@outlook.com  | clubadmin   |
 > ⚠️ These accounts are for demo/testing only. Do **not** use real passwords or emails in production.
+
+
+---
+## 👥 Team Members
+
+| Name              | Role Description |
+|-------------------|------------------|
+| **Funoon Albalawi** | Admin dashboard & management logic |
+| **Budoor Alshehri** | Admin UX/UI and system integration |
+| **Khulud Alotaibi** | Student dashboard, homepage, and event registration |
+| **Zahra Alhadab** | Club Admin interface: event & announcement control |
+| **Rahf Altwairqi** | Club Admin interface: member & event management |
+---
