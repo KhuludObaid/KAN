@@ -1,15 +1,18 @@
-
 # 🌐 KFUPM Activity Network (KAN)
-
 
 ## 📘 Project Description
 
-The **KFUPM Activity Network** is a web platform designed to help students discover clubs, events, and activities happening at KFUPM. It enables students to register for events, join clubs, and engage with the university's social and academic communities. The platform provides a seamless and intuitive user interface with features like:
+**KFUPM Activity Network** is a full-stack web platform designed to help students discover, register, and engage with university events and clubs. It allows for role-based interaction between students, club administrators, and system administrators.
+
+Key features include:
 
 - 🔗 Social media integration  
 - 📝 Event registration  
 - 🌑 Dark mode  
-- 📊 Dashboards for students, admins, and club admins  
+- 📊 Role-based dashboards (Admin, Club Admin, Student)  
+- 🧾 Ticket generation and QR scanning  
+- 📥 Club membership application & review  
+- 🛡️ Backend validation and duplicate protection  
 
 ---
 
@@ -17,102 +20,175 @@ The **KFUPM Activity Network** is a web platform designed to help students disco
 
 ### ✅ Prerequisites
 
-Make sure you have the following installed:
+Ensure the following are installed:
 
 - 🟢 **Node.js** – [Download Node.js](https://nodejs.org/)
-- 🧰 **Git** – Version control system for managing code
-
-### 📥 Installation Steps
-
-1. **Clone the repository**:
-   ```bash
-   git clone https://github.com/funoonAlbalawi12/SWE363Project.git
-   cd SWE363Project
-   cd frontend
-   ```
-
-2. **Install dependencies**:
-   ```bash
-   npm install
-   ```
-
-3. **Install additional libraries**:
-   ```bash
-   npm install react-scripts
-   ```
-
-4. **Run the application**:
-   ```bash
-   npm start
-   ```
+- 🧰 **Git** – Version control system
+- 🟠 **MongoDB** – For backend data storage (local or cloud via Atlas)
 
 ---
 
-## 🚀 Usage Instructions and Examples
+### 📁 Clone the Repository
 
-Once the app is running, users are routed to one of the following dashboards depending on their role:
-
-### 👤 Admin Dashboard  
-**URL**: `/admin`  
-Admins can:
-- View and manage all registered clubs
-- Approve club creation requests
-- Monitor system-wide activity
-
-### 🧑‍💼 Club Admin Dashboard  
-**URL**: `/clubadmin`  
-Club Admins can:
-- Post and manage announcements and events
-- Review and approve membership requests
-- Edit club profiles and communicate with members
-
-### 👨‍🎓 Student Dashboard  
-**URL**: `/student`  
-Students can:
-- Browse and register for events
-- Join clubs and view their event history
-- Update their profile and follow club activity
-
-### 🌗 Dark Mode  
-- Available site-wide  
-- Saves user preference using local storage
+```bash
+git clone https://github.com/funoonAlbalawi12/SWE363Project.git
+cd SWE363Project
+```
 
 ---
 
-## 🛠️ Technologies Used
+### 🖥️ Frontend Setup
 
-This project leverages the following technologies to build a responsive, interactive, and user-friendly platform:
+```bash
+cd frontend
+npm install
+npm start
+```
 
-- ⚛️ **React.js** – Front-end JavaScript library for building user interfaces
-- 🎨 **CSS** – For custom styling and responsive design
-- 🌐 **HTML5** – Markup language used to structure web content
-- 📦 **Node.js & npm** – JavaScript runtime and package manager for server-side logic and dependency management
-- 🧩 **React Router** – Handles routing between different pages and dashboards
-- 🌑 **Dark Mode** – Theme toggle feature using local storage
-- 🔗 **React Icons** – For adding beautiful icons to enhance UI
-- 📁 **Git & GitHub** – For version control and collaboration
+---
+
+### 🛠️ Backend Setup
+
+```bash
+cd ../backend
+npm install
+npm run dev
+```
+
+> 🔒 Create a `.env` file in the backend directory with the following:
+```env
+PORT=5001
+MONGO_URI=your_mongodb_connection_string
+STRIPE_SECRET_KEY=your_stripe_secret_key
+```
+
+---
+
+## 🚀 Usage Instructions
+
+Users are redirected based on their roles:
+
+### 👤 Admin
+- Manage clubs, events, and user roles  
+- Approve or reject club requests  
+
+### 🧑‍💼 Club Admin
+- Create and manage events  
+- View registered members  
+- Post announcements  
+
+### 👨‍🎓 Student
+- Register for events  
+- View and manage tickets  
+- Apply to join clubs  
+
+---
+
+## 🧱 Tech Stack
+
+- **Frontend**: React.js, CSS, React Router, Axios  
+- **Backend**: Node.js, Express.js, MongoDB, Mongoose, Stripe  
+- **Tools**: GitHub, VS Code, Figma  
+- **Features**: REST API, JWT authentication, QR code ticketing, dark mode  
 
 ---
 
 ## 🖌️ Figma Design
 
-You can explore the full design prototype of the KFUPM Activity Network on Figma:
+🎨 [View on Figma](https://www.figma.com/proto/qtgg5Tq9rN33B2dAEuZiSH/swe363-project-KAN-?node-id=0-1&t=ii6pirTXHxPRfdzG-1)
 
-👉 [View on Figma](https://www.figma.com/proto/qtgg5Tq9rN33B2dAEuZiSH/swe363-project-KAN-?node-id=0-1&t=ii6pirTXHxPRfdzG-1)
+---
 
-## 👥 Team Members and Roles
+## 👥 Team Members
 
-### 👩‍💻 Funoon Albalawi  
-Responsible for implementing the flow of the **Admin** user, who is considered the main user of the website. Funoon focuses on the admin dashboard and tools that allow efficient management of clubs, clubs Admin, and events.
+| Name              | Role Description |
+|-------------------|------------------|
+| **Funoon Albalawi** | Admin dashboard & management logic |
+| **Budoor Alshehri** | Admin UX/UI and system integration |
+| **Khulud Alotaibi** | Student dashboard, homepage, and event registration |
+| **Zahra Alhadab** | Club Admin interface: event & announcement control |
+| **Rahf Altwairqi** | Club Admin interface: member & event management |
+---
 
-### 👩‍💻 Budoor Alshehri  
- Takes the role of implementing the flow of the **Admin** user, who is considered the main user of the website. Budoor ensures smooth integration of admin functionalities, improving navigation and user interface for the admin role.
+## 🧾 How to Register
 
-### 👩‍💻 Khulud Alotaibi  
-  Implements the flow for the **Student** user and the **homepage** of the website, which is considered the main user interface for students. Khulud focuses on making the student experience intuitive and user-friendly, ensuring easy access to events, clubs, and user profiles.
+### 👨‍🎓 Student Registration
+- Visit the homepage and click on **Explore Events**.
+- Register for an event with your name and email to create a student account.
 
-### 👩‍💻 Zahra Alhadab  
- Takes the role of implementing the flow for the **Club Admin** user, who is considered an essential user of the website. Zahra focuses on providing Club Admins with tools for managing clubs, posting announcements, and engaging with members.
+### 🧑‍💼 Club Admin Registration
+- A club admin account is created when a user applies to join a club and is approved by the system admin.
+- After approval, the user gains access to the club admin dashboard.
 
-### 👩‍💻 Rahf Altwairqi  
-Implements the flow for the **Club Admin** user, who is a main user of the website. Rahf works alongside Zahra to ensure Club Admins have the necessary tools for managing events, announcements, and members effectively.
+### 👤 Admin Access
+- Admin credentials are preconfigured or manually created in the database.
+- Admin users can log in directly to access system-wide management features.
+
+---
+
+## 📡 API Endpoints
+
+| Method | Endpoint                          | Description                              |
+|--------|-----------------------------------|------------------------------------------|
+| GET    | `/api/users/test`                 | Test API connectivity                    |
+| POST   | `/api/users/register`             | Register a user                          |
+| POST   | `/api/users/login`                | Log in a user                            |
+| GET    | `/api/events`                     | Fetch all events                         |
+| POST   | `/api/events`                     | Create a new event (Club Admin)          |
+| GET    | `/api/tickets/:userId`            | Get all tickets for a user               |
+| POST   | `/api/tickets/register`           | Register for a ticket                    |
+| GET    | `/api/clubs`                      | Get all clubs                            |
+| POST   | `/api/clubs`                      | Create a new club                        |
+| POST   | `/api/clubmemberships/apply`      | Student applies to join a club           |
+| GET    | `/api/clubmemberships/:clubId`    | Get all club membership requests         |
+| POST   | `/api/eventregistrations`         | Register a student for an event          |
+| POST   | `/api/payments/checkout-session`  | Create Stripe checkout session           |
+
+---
+
+## 📁 Project Structure
+
+```
+SWE363Project/
+│
+├── frontend/               # React frontend
+│   ├── src/
+│   └── public/
+│
+├── backend/                # Node.js backend
+│   ├── routes/
+│   ├── controllers/
+│   ├── models/
+│   ├── config/
+│   └── server.js
+```
+
+---
+
+## 🧪 Running Tests
+
+To run backend tests (if implemented):
+
+```bash
+cd backend
+npm test
+```
+
+---
+
+## 🌍 Deployment
+
+Frontend: [https://your-frontend-link](#)  
+Backend API: [https://your-backend-link](#)
+---
+
+## 🧪 Demo User Accounts
+
+Use the following credentials to log in for testing purposes:
+
+| Role    | Email               | Password   |
+|---------|---------------------|------------|
+| Student | khulud@outlook.com  | 12345678   |
+| Admin   | budoor@outlook.com  | admin123   |
+| club admin   | rahf@outlook.com  | clubadmin   |
+> ⚠️ These accounts are for demo/testing only. Do **not** use real passwords or emails in production.
