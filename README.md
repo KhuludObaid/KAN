@@ -139,8 +139,7 @@ SWE363Project/
 ---
 ## 🌍 Deployment
 
-
-[🌐 Visit Deployed App](https://kanx.netlify.app)
+🌐 [View on Netlify](https://kanx.netlify.app)
 ---
 
 ## 🧪 Demo User Accounts
